@@ -1,0 +1,138 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  font-family: var(--font-family-sans); /*uso de la variable de texto*/
+  background-color: var(--color-bg-fondo1);
+  color: var(--color-text-texto1);
+  line-height: 1.4;
+  min-height: 100vh;
+}
+
+.pantalla-app {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--color-bg-fondo1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+
+
+:root {
+     --color-brand-primario: #6B8E23; /*color verde normal*/
+     --color-brand-sombra1: #55711C; /*color verde medio oscuro */
+     --color-brand-sombra2: #3E5315; /*color verde oscuro*/
+     --color-brand-luz1: #8FAF52; /*color verde medio claro*/
+     --color-brand-luz2: #B8D08A; /*color verde claro*/
+
+     --color-text-texto1: #2E2E2E; /*color texto negro*/
+     --color-text-texto2: #6F6F6F; /*color texto gris para subtitulos y descriciones*/
+     --color-text-texto3: #F2F2F2; /*color texto blanco para fondos oscuros*/
+     --color-text-texto4: #3B82F6; /*color texto acento celeste*/
+     --color-text-texto5: #22C55E; /*color de texto de acierto verde*/
+     --color-text-texto6: #DC2626; /*color de tecto error rojo*/
+
+     --color-bg-fondo1: #F8F7F4; /*fondo blanco base app*/
+     --color-bg-fondo2: #EFECE5; /*fondo blanco apenas gris para fondo general*/
+
+
+/*----------------------------------------------------------------------------*/
+
+
+      --font-family-sans: 'Inter', system-ui, sans-serif; /*variable de texto*/
+      --space-sm: 0.5rem;
+      --space-md: 1rem;
+      --space-lg: 1.5rem;
+
+      --btn-padding-y: 0.75rem;  /* Relleno vertical de botón */
+      --btn-padding-x: 1.5rem;   /* Relleno horizontal de botón */
+      --btn-font-size: 1rem;     /* Tamaño de fuente en botones */
+      --radius-sm: 4px;   /* Botones pequeños y etiquetas de estado */
+
+}
+
+/*------------------fondos----------------------*/
+
+
+.bg-color-primario{
+      background-color: var(--color-brand-primario);
+}
+
+.bg-color-sombra2{
+      background-color: var(--color-brand-sombra2);
+}
+
+.bg-color-luz2{
+      background-color: var(--color-brand-luz2);
+}
+
+.bg-color-fr{
+      background-color: var(--color-brand-fondo2)!important;
+}
+
+
+
+
+/*----------------------BOTONES----------------------*/
+
+.btn-bg-primario{
+   background-color: var(--color-brand-primario);
+}
+
+.btn-bg-sombra2{
+   background-color: var(--color-brand-sombra2);
+}
+
+.btn-bg-luz2{
+   background-color: var(--color-brand-luz2) !important;
+}
+   
+/*TAMAÑOS------------*/
+.btn-menu {
+    width: 150px;
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+}
+
+/*DISPOSICIONES-------*/
+
+.botones-registros {  /*LOS DE LA PANTALLA DE INICIO*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+/*------------------DISPOSICIONES GENERALES--------------------*/
+
+.seccion-menu {
+    flex: 1;
+    padding: 1.25rem !important;
+}
+
+.seccion-registros {
+    padding: 1rem;
+}
+
+/*_________________________*/
+
+@media (prefers-color-scheme: dark) {
+               : root {
+                        --color-text-dark: #F5F5F5;
+                        --color-bg-main: #1B1B1B;
+                     }
+      }
+

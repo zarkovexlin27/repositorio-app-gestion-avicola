@@ -1,0 +1,16 @@
+{
+  "short_name": "app_gestion",
+  "name": "nombre generico de app de gestion",
+  "icons": [
+    {
+      "src": ".png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#111827",
+  "theme_color": "#111827",
+  "display": "standalone",
+  "orientation": "portrait"
+}
